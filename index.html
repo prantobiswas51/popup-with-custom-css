@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="main-container" id="container">
+        <div class="sub-container">
+
+            <div class="flex justify-end" id="crossBtn">
+                <div class="iconclose text-right text-2xl px-3 py-1">X</div>
+            </div>
+
+
+            <div class="flex w-full">
+
+                <!-- Left side  -->
+                <div class="popleft max-w-[250px] text-center bg-purple-900 p-4 text-white flex flex-col justify-center">
+                    <h2 class="p-4 text-2xl font-bold">SPIRING SALE</h2>
+                    <hr>
+                    <h1 class="text-8xl">40% OFF</h1>
+                    <hr>
+                </div>
+
+
+                <div class="bg-gray-400 bg-gray-50 text-black max-w-[400px] p-10">
+                    <h2 class="p-4 uppercase ">Enter email to unlock the power</h2>
+                    <input type="email" class="p-2 w-full border rounded-md my-4" placeholder="Enter email Address" />
+                    <input type="checkbox" name="" class="" id=""> Yes, I'd like to get opt emails
+                    <button class="border p-2 bg-green-500 my-4 w-full rounded-md text-white">GET MY 40% OFF</button>
+                    <button class="my-4 w-full">NO THANKS</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <button class="border bg-green-600 p-2">Open</button>
+
+    <script>
+        var btn = document.getElementById('crossBtn')
+        
+        btn.onclick = function(){
+            console.log("cliecled");
+            document.getElementById('container').style.display = "none"
+        }
+        
+    </script>
+
+
+</body>
+
+</html>
